@@ -12,8 +12,8 @@ ecomCart.on('change', ({ data }) => {
     document.getElementById('containerCalc').style.display = 'block'
     var checkoutButton = document.querySelector('.cart__btn-checkout')
     var percentBar
-    var countQuantity = data.items.reduce((acc, curr) => acc + curr.quantity, 0)
-    var evalQuantity = lessQuantity - countQuantity
+    var count = data.items.reduce((acc, curr) => acc + curr., 0)
+    var eval = less - count
     if (evalQuantity > 0) {
       lessUnit.innerHTML = evalQuantity
       percentBar = Math.round(countQuantity / lessQuantity * 100) + '%'
